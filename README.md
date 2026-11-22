@@ -1,42 +1,40 @@
-# Portfolio de Nayla Aguado
+# Portfolio Nayla Aguado
 
-[![CI](https://github.com/eneekoruiz/portfolio_nayla/actions/workflows/ci.yml/badge.svg)](https://github.com/eneekoruiz/portfolio_nayla/actions/workflows/ci.yml)
-[![Live Demo](https://img.shields.io/badge/Demo-portfolio--nayla--one.vercel.app-0070f3?style=flat&logo=vercel&logoColor=white)](https://portfolio-nayla-one.vercel.app)
+Portfolio website for graphic designer and visual artist Nayla Aguado.
 
-> 🌐 **Despliegue en vivo:** [https://portfolio-nayla-one.vercel.app](https://portfolio-nayla-one.vercel.app)
+Live demo: [portfolio-nayla-one.vercel.app](https://portfolio-nayla-one.vercel.app)
 
-Portfolio visual de Nayla Aguado, centrado en ilustracion, identidad, fotografia, packaging y diseno editorial. La web organiza los proyectos en una experiencia de navegacion continua con animaciones y composiciones adaptadas a cada coleccion.
+## Tech Stack
 
+- **Frontend:** React 18, TypeScript, Vite, Tailwind CSS
+- **Motion & Scrolling:** Framer Motion, Lenis (smooth inertia scrolling), Lucide Icons
+- **Tooling:** ESLint, TypeScript
 
-![Vista principal del portfolio](docs/images/portfolio.png)
+## Key Decisions
 
-## Desarrollo local
+- **Inertia Scrolling:** Integrates Lenis to provide consistent smooth scrolling velocity across desktop and mobile devices.
+- **Fluid Layouts & Asset Delivery:** Grid and lightbox layouts built with zero layout shifts, loading WebP media dynamically for fast showcase loading.
+- **Micro-Interactions:** Custom hover and scroll-triggered animations powered by Framer Motion.
 
-Requiere Node.js 18 o posterior.
+## Local Setup
+
+### Prerequisites
+
+- Node.js 18+
+
+### Installation & Run
 
 ```bash
-npm ci
+git clone https://github.com/eneekoruiz/portfolio-nayla.git
+cd portfolio-nayla
+npm install
+
+# Start development server
 npm run dev
-```
 
-Para comprobar la version de produccion:
+# Run linter
+npm run lint
 
-```bash
+# Build production bundle
 npm run build
-npm run preview
 ```
-
-## Tecnologia
-
-- React y TypeScript
-- Vite
-- Framer Motion y Lenis
-- CSS Modules
-
-## Arquitectura
-
-La aplicacion Vite compone el portfolio con secciones y componentes React que consumen contenido y recursos locales. No existe backend: el build genera archivos estaticos y las animaciones se aplican en el cliente sin alterar la estructura del contenido.
-
-## Documentacion
-
-La [documentacion en DeepWiki](https://deepwiki.com/eneekoruiz/portfolio_nayla) ofrece una vista adicional de la estructura y el codigo del proyecto.
