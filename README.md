@@ -1,40 +1,43 @@
-# Portfolio Nayla Aguado
+# Portfolio Visual · Nayla Aguado
 
-Portfolio website for graphic designer and visual artist Nayla Aguado.
+Sitio web personal y portfolio interactivo para la diseñadora gráfica y directora de arte Nayla Aguado, desarrollado con React 18, TypeScript, Vite, Tailwind CSS y scroll inercial.
 
-Live demo: [portfolio-nayla-one.vercel.app](https://portfolio-nayla-one.vercel.app)
+- **Demo en vivo:** [portfolio-nayla-one.vercel.app](https://portfolio-nayla-one.vercel.app)
+- **Documentación de arquitectura:** [DeepWiki - portfolio-nayla](https://deepwiki.com/eneekoruiz/portfolio-nayla)
 
-## Tech Stack
+## Propósito y Valor Técnico
+
+Diseñado a medida para presentar proyectos de identidad visual, branding editorial y cartelería con máxima pureza estética, fluidez de movimiento y respeto riguroso por las proporciones y la fidelidad cromática de las obras.
+
+- **Desplazamiento Inercial Cinemático:** Integración de la librería Lenis para unificar la velocidad y amortiguación del scroll entre navegadores de escritorio (ratón, trackpad) y pantallas táctiles móviles, logrando una sensación táctil continua.
+- **Micro-interacciones y Animaciones de Entrada:** Transiciones y desvelado progresivo de elementos gráficos al entrar en viewport implementados con Framer Motion.
+- **Rendimiento Visual y Cero CLS:** Estructura modular de layouts con dimensiones fijas de ratio en imágenes para evitar cualquier desplazamiento inesperado de maquetación (Cumulative Layout Shift) y carga optimizada de recursos WebP.
+
+## Stack Técnico
 
 - **Frontend:** React 18, TypeScript, Vite, Tailwind CSS
-- **Motion & Scrolling:** Framer Motion, Lenis (smooth inertia scrolling), Lucide Icons
-- **Tooling:** ESLint, TypeScript
+- **Animaciones & Scroll:** Framer Motion, Lenis, Lucide Icons
+- **Tooling:** ESLint, Prettier, TypeScript
 
-## Key Decisions
+## Puesta en Marcha Local
 
-- **Inertia Scrolling:** Integrates Lenis to provide consistent smooth scrolling velocity across desktop and mobile devices.
-- **Fluid Layouts & Asset Delivery:** Grid and lightbox layouts built with zero layout shifts, loading WebP media dynamically for fast showcase loading.
-- **Micro-Interactions:** Custom hover and scroll-triggered animations powered by Framer Motion.
-
-## Local Setup
-
-### Prerequisites
+### Prerrequisitos
 
 - Node.js 18+
 
-### Installation & Run
+### Instalación y Ejecución
 
 ```bash
 git clone https://github.com/eneekoruiz/portfolio-nayla.git
 cd portfolio-nayla
 npm install
 
-# Start development server
+# Servidor de desarrollo con Hot Module Replacement (HMR)
 npm run dev
 
-# Run linter
+# Análisis estático de código
 npm run lint
 
-# Build production bundle
+# Compilar para producción
 npm run build
 ```
